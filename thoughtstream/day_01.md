@@ -64,8 +64,8 @@ Quantization shrinks model size by reducing weight precision (e.g., from FP32 to
 
 ## 🧭 Next Steps
 
-- Create `proxymind-learnings` repo to hold this journal
-- Begin ingestion from this folder into the RAG system (`docs/thoughtstream`)
+- Create `thoughtstream` folder to hold this journal
+- Begin ingestion from this folder into the RAG system (`thoughtstream`)
 - Add tool discovery config (`tool_registry.yaml`)
 - Scaffold a basic FastAPI MCP server (optional but helpful)
 
