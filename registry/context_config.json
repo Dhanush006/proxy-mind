@@ -1,0 +1,17 @@
+{
+  "repos": [
+    {
+      "name": "proxymind",
+      "source": "local",
+      "folders": ["docs/", "thoughtstream/"],
+      "auto_ingest": true
+    }
+  ],
+  "api_endpoints": [
+    {
+      "name": "openai_chat",
+      "url": "https://api.openai.com/v1/chat/completions",
+      "method": "POST"
+    }
+  ]
+}

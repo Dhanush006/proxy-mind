@@ -1,0 +1,15 @@
+tools:
+  - name: github_docs
+    type: retriever
+    path: docs/projects/
+    description: "All ingested code and README files from GitHub"
+
+  - name: thoughtstream
+    type: retriever
+    path: docs/thoughtstream/
+    description: "Daily learning journals"
+
+  - name: code_executor
+    type: function
+    endpoint: /run-code
+    description: "Executes code snippets for verification"
