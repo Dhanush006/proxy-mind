@@ -3,7 +3,7 @@
     {
       "name": "proxymind",
       "source": "local",
-      "folders": ["docs/", "thoughtstream/"],
+      "folders": ["docs/", "docs/thoughtstream/"],
       "auto_ingest": true
     }
   ],
