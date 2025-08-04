@@ -1,0 +1,30 @@
+# Core RAG stack
+langchain>=0.1.15
+chromadb>=0.4.24
+openai>=1.2.3
+sentence-transformers>=2.2.2
+tiktoken>=0.5.1
+python-dotenv>=1.0.0
+
+# Vector store dependencies
+pandas
+numpy
+
+# Optional: Local LLM, Fine-tuning, Quantization
+transformers>=4.38.0
+torch>=2.0.0
+accelerate>=0.27.2
+bitsandbytes>=0.42.0
+peft>=0.8.2
+scipy
+
+# For CLI or future FastAPI interface
+rich
+fastapi
+uvicorn
+
+# File parsing support (Markdown, PDFs)
+unstructured
+markdown
+PyMuPDF
+pdfminer.six
