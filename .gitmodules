@@ -1,0 +1,9 @@
+[submodule "docs/projects/arrhythmia-detection-gass"]
+	path = docs/projects/arrhythmia-detection-gass
+	url = https://github.com/Dhanush006/arrhythmia-detection-gass.git
+[submodule "docs/projects/traffic-flow-estimation-gru-rswhe"]
+	path = docs/projects/traffic-flow-estimation-gru-rswhe
+	url = https://github.com/Dhanush006/traffic-flow-estimation-gru-rswhe
+[submodule "docs/projects/solar-forecasting-lstm"]
+	path = docs/projects/solar-forecasting-lstm
+	url = https://github.com/Dhanush006/solar-irradiance-forecasting-lstm.git
