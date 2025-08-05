@@ -1,0 +1,3 @@
+# Ignore all internal .git folders of submodules
+docs/projects/**/.git
+docs/thoughtstream/**/.git
