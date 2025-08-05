@@ -1,0 +1,21 @@
+.env:
+  chunk_overlap: 30
+  chunk_size: 300
+.ipynb:
+  chunk_overlap: 75
+  chunk_size: 500
+.mat:
+  chunk_overlap: 50
+  chunk_size: 400
+.md:
+  chunk_overlap: 75
+  chunk_size: 500
+.pdf:
+  chunk_overlap: 50
+  chunk_size: 350
+.py:
+  chunk_overlap: 100
+  chunk_size: 800
+.txt:
+  chunk_overlap: 75
+  chunk_size: 500

@@ -1,0 +1,3 @@
+# IVF-specific
+# faiss_ivf_nlist: None         # Number of clusters (centroids)
+# faiss_ivf_nprobe: None        # How many clusters to search over
