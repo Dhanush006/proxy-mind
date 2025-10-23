@@ -15,7 +15,7 @@
   chunk_size: 350
 .py:
   chunk_overlap: 100
-  chunk_size: 800
+  chunk_size: 500  # The "all-miniLM-L6-v2" model can handle up to 512 tokens
 .txt:
   chunk_overlap: 75
   chunk_size: 500

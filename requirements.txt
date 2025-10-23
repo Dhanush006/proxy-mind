@@ -28,3 +28,8 @@ unstructured
 markdown
 PyMuPDF
 pdfminer.six
+
+# Additional dependencies for specific models
+mcp
+ollama
+huggingface_hub

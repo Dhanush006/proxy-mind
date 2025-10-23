@@ -45,7 +45,7 @@ class IngestEngine:
             ".env": TextLoader,
             ".md": TextLoader,
             ".pdf": PyPDFLoader,
-            ".mat": None  # .mat not supported yet
+            ".mat": None,  # .mat not supported yet
         }.get(ext, TextLoader)
 
     def get_splitter_for_extension(self, ext, splitter=RecursiveCharacterTextSplitter):
