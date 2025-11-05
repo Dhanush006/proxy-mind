@@ -67,8 +67,8 @@ async def async_chat(user_message):
 # Launch Gradio
 # -----------------------------
 def launch_chat_interface():
-    with gr.Blocks(title="Grok-RAG Chat") as demo:
-        gr.Markdown("## 🧠 Grok-RAG Chat Interface")
+    with gr.Blocks(title=" Proxy-Mind Chat") as demo:
+        gr.Markdown("## 🧠 Proxy-Mind Chat Interface")
         chatbot = gr.Chatbot(type="messages")
         msg = gr.Textbox(placeholder="Type your query here...")
         clear = gr.Button("Clear Chat")
