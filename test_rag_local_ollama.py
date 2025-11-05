@@ -2,15 +2,15 @@ import os
 from dotenv import load_dotenv
 
 # Import the necessary LangChain classes
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains.retrieval import create_retrieval_chain
+from langchain_classic.chains.combine_documents.stuff import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
 # Import the Ollama class for local models
 from langchain_community.llms import Ollama
 
 # Import the components for your original retriever setup
-from langchain_community.vectorstores import FAISS
-from langchain_chroma import Chroma
+from langchain_community.vectorstores.faiss import FAISS
+from langchain_community.vectorstores.chroma import Chroma
 from langchain_huggingface.embeddings import HuggingFaceEmbeddings
 
 # Load API token from .env (This is no longer needed for the LLM, but kept for clarity)
@@ -38,7 +38,7 @@ retriever = chroma_db.as_retriever(search_type="similarity", search_kwargs={"k":
 # --- Ollama Model Setup ---
 # Use the Ollama class to connect to your local model.
 # The 'model' parameter should match the model you downloaded (e.g., "phi3", "llama3").
-llm = Ollama(model="phi3", num_predict=1000, temperature=0.7)
+llm = Ollama(model="phi3:mini", num_predict=1000, temperature=0.7)
 
 # --- Define the new LangChain Prompt Template ---
 # This is the prompt template you provided in our previous conversation.

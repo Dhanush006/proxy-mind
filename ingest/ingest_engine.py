@@ -59,13 +59,16 @@ class IngestEngine:
         else:
             return TokenTextSplitter(
             chunk_size=config["chunk_size"],
-            chunk_overlap=config["chunk_overlap"]
+            chunk_overlap=config["chunk_overlap"],
+            # Allow special tokens (like <|endoftext|>) to be encoded as normal text
+            # to avoid tiktoken throwing on disallowed special tokens found in files.
+            disallowed_special=()
             )
         
 
     def load_all_documents(self) -> List:
         all_docs = []
-        ignore_dirs = {"vector_dbs", ".git", "__pycache__"}
+        ignore_dirs = {"vector_dbs", ".git", "__pycache__", ".venv", ".vscode"}
 
         for root, dirs, files in os.walk(self.data_dir):
             # Filter out ignored directories in-place
